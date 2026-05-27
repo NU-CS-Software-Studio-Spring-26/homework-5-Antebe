@@ -1,0 +1,13 @@
+---
+description: Security rules for the sample todo app
+alwaysApply: true
+---
+
+- Never write, log, or echo secrets, API keys, or production credentials in code or output
+- No `eval`, `send`, or `public_send` on user input
+- No `html_safe` or `raw` on untrusted user input -- always let Rails auto-escape
+- Use parameterized queries and ActiveRecord methods; never string-interpolate into SQL
+- Do not disable CSRF protection (`skip_before_action :verify_authenticity_token`)
+- Do not disable mass assignment protection or use `permit!`
+- Do not commit `.env` files, `master.key`, or credential keys to version control
+- Validate and sanitize all user input at the controller/model boundary

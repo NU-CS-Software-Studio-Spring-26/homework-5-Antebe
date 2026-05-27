@@ -1,0 +1,13 @@
+.env
+.env.*
+config/master.key
+config/credentials/*.key
+config/credentials.yml.enc
+tmp/
+log/
+storage/
+node_modules/
+vendor/bundle/
+*.sqlite3
+*.sqlite3-*
+db/*.sqlite3
