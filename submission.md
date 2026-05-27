@@ -132,6 +132,12 @@ As a user, I want to mark a todo as high priority by clicking a toggle on the in
 - Response content-type is `text/vnd.turbo-stream.html`
 - At least one test verifies the turbo stream response
 
+### Browser verification
+
+Screenshot from DevTools Network tab showing the turbo stream response:
+
+![DevTools network tab showing turbo stream content-type](image.png)
+
 ### Plan (from Plan mode, with my edits)
 
 1. **Migration + model** -- Add `high_priority` boolean column to todos, default false, null false
